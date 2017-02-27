@@ -13,12 +13,79 @@ body {
 	width: 100%;
 	font-size: 87.5%;
 	font-family: Roboto, sans-serif;
+	background-color: #fafafa;
 }
 img {
 	max-width: 100%;
 }
-
+input {
+	outline: none;
+}
+button {
+	outline: none !important;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 1170px;
+	width: 100%;
+	height: 500px;
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+.test {
+	width: 200px;
+	height: 40px;
+	border: 1px solid black;
+	background-color: pink;
+}
 /*** START HEADER PAGE ***/
+#main-header {
+	width: 100%;
+	height: 80px;
+	background-color: #005eb8;
+}
+#top-header {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+	#top-header h1.company-logo > a > img {
+		max-width: 140px;
+		height: 40px;
+	}
+	#top-header > div.input-search > input {
+		padding: 10px;
+		width: 500px;
+		height: 40px;
+		border: none;
+		border-radius: 5px;
+		box-sizing: border-box;
+	}
+		#top-header > div.input-search > span.input-btn {
+			position: relative;
+			left: -45px;
+			width: 40px;
+			height: 40px;
+			box-sizing: border-box;
+		}
+			#top-header > div.input-search > span.input-btn > button.btn {
+				padding: 13px;
+				width: 40px;
+				height: 40px;
+				border: none;
+				border-left: 1px solid #dbe3eb;
+				background-color: #fff;
+				box-sizing: border-box;
+			}
+	/*#top-header > div > input.form-control {
+		position: absolute;
+		max-width: 500px;
+	}
+	#top-header > div > span.input-group-btn {
+		position: relative;
+	}*/
 
 
 /*** END HEADER PAGE ***/
