@@ -1,0 +1,5 @@
+nav - logo, search, my account, favourites, cart, products // weekly offers, 
+
+shop -> products -> categories -> 
+
+logged? -> guestID 
