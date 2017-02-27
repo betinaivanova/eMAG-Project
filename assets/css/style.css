@@ -1,0 +1,32 @@
+/*** IMPORT FONT ***/
+
+@font-face {
+	font-family: Roboto;
+	src: url('../fonts/Roboto-Regular.ttf')
+}
+
+/*** --- ***/
+
+/*** OVERRIDES ***/
+
+body {
+	width: 100%;
+	font-size: 87.5%;
+	font-family: Roboto, sans-serif;
+}
+img {
+	max-width: 100%;
+}
+
+/*** START HEADER PAGE ***/
+
+
+/*** END HEADER PAGE ***/
+
+/*** START MAIN PAGE ***/
+
+
+
+/*** END MAIN PAGE ***/
+
+/*** MEDIA QUERIES ***/
