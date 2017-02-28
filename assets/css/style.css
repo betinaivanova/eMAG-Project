@@ -24,6 +24,14 @@ input {
 button {
 	outline: none !important;
 }
+a {
+	text-decoration: none;
+	color: #fff;
+}
+a:hover {
+	text-decoration: none;
+	color: #fff;
+}
 .wrapper {
 	margin: 0 auto;
 	max-width: 1170px;
@@ -79,13 +87,75 @@ button {
 				background-color: #fff;
 				box-sizing: border-box;
 			}
-	/*#top-header > div > input.form-control {
-		position: absolute;
-		max-width: 500px;
+#top-header-nav > ul > li {
+	position: relative;
+	float: left;
+	margin: 10px;
+}
+#top-header-nav > ul > li > a {
+	display: inline-block;
+	line-height: 80px;
+}
+#top-header-nav > ul > li:first-child:hover div.my-account {
+	display: block;
+}
+#top-header-nav > ul > li:nth-child(2):hover div.favourite {
+	display: block;
+}
+	#top-header-nav > ul > li > a > span.nav-icon {
+		padding-right: 10px;
 	}
-	#top-header > div > span.input-group-btn {
-		position: relative;
-	}*/
+	#top-header-nav > ul > li > div {
+		display: none;
+		background-color: #fefefe;
+		border-radius: 10px;
+		box-sizing: border-box;
+	}
+	#top-header-nav > ul > li > div.my-account {
+		width: 220px;
+		height: 150px;
+		position: absolute;
+		top: 60px;
+		left: -120px;
+	}
+	#top-header-nav > ul > li > div.favourite {
+		width: 300px;
+		height: 150px;
+		position: absolute;
+		top: 60px;
+		left: -200px;
+	}
+	#top-header-nav > ul > li > div > div {
+		margin: 30px;
+	}
+	#top-header-nav > ul > li > div.my-account > div.account-info > a {
+		margin-bottom: 20px;
+		width: 160px;
+		height: 30px;
+	}
+	#top-header-nav > ul > li > div.favourite > div.favourite-info > a {
+		margin-top: 20px;
+		width: 260px;
+		height: 35px;
+	}
+	#top-header-nav > ul > li > div.favourite > div.favourite-info > p {
+		text-align: justify;
+		color: #797979;
+	}
+	#top-header-nav > ul > li > div.my-account > div.account-info > p > a {
+		color: #3c77a5;
+	}
+	#top-header-nav > ul > li > div.my-account > div.account-info > p > a:hover {
+		text-decoration: underline;
+	}
+	.top-header-btn {
+		padding: 10px;
+		display: inline-block;
+		color: #eaf1f7;
+		background-color: #1963a1;
+		border-radius: 5px;
+		text-align: center;
+	}
 
 
 /*** END HEADER PAGE ***/
@@ -95,5 +165,10 @@ button {
 
 
 /*** END MAIN PAGE ***/
-
+/*** CLEAR FLOAT ***/
+#top-header-nav > ul:after {
+	display: block;
+	content: "";
+	clear: both;
+}
 /*** MEDIA QUERIES ***/
