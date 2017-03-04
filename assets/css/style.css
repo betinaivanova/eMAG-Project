@@ -20,6 +20,7 @@ img {
 }
 input {
 	outline: none;
+	border: none;
 }
 button {
 	outline: none !important;
@@ -165,6 +166,123 @@ a:hover {
 
 
 /*** END MAIN PAGE ***/
+
+/*** START REGISTER.html ***/
+
+#register {
+	margin: 50px auto;
+	width: 100%;
+	max-width: 600px;
+	height: 700px;
+	box-sizing: border-box;
+}
+#register > h1.company-logo {
+	text-align: center;
+}
+#register > div.login {
+	margin: 30px auto;
+	width: 400px;
+	height: 450px;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 3px 3px 2px #dedede;
+	display: flex;
+  	justify-content: center;
+}
+#register > div.login > form {
+	padding-top: 30px;
+	text-align: center;
+}
+#register > div.login > form > fieldset > legend {
+	margin-bottom: 40px;
+	font-size: 2em;
+	color: #999999;
+}
+#register > div.login > form > fieldset > label {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	color: #404040;
+}
+#register > div.login > form > fieldset > input {
+	padding-left: 10px;
+	display: block;
+	margin-bottom: 20px;
+	width: 320px;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid #bbbbbb;
+	box-sizing: border-box;
+}
+#register > div.login > form > fieldset > input:hover {
+	border: 1px solid #888888;
+}
+#register > div.login > form > fieldset > input#continue-btn {
+	border: none;
+	background-color: #0068b5;
+	color: #efffff;
+}
+#register > div.login > form > fieldset > input#continue-btn:hover {
+	background-color: #115A8E;
+}
+#register > div.login > form > p {
+	line-height: 1.3em;
+}
+#register > div.login > form > p:last-child {
+	margin-top: 20px;
+	color: #999999;
+}
+#register > div.login > form > div.social-btn {
+	margin-top: 20px;
+	text-align: left;
+}
+#register > div.login > form > div.social-btn > a {
+	padding: 15px;
+	display: inline-block;
+	width: 160px;
+	border-radius: 5px;
+	font-size: 1.1em;
+	box-sizing: border-box;
+}
+#register > div.login > form > div.social-btn > a > i {
+	padding-right: 50px;
+}
+#register > div.login > form > div.social-btn > a:first-child {
+	margin-right: 10px;
+	background-color: #3b5998;
+}
+#register > div.login > form > div.social-btn > a:last-child {
+	background-color: #df4a32;
+}
+#register >  a {
+	display: inline-block;
+	width: 100%;
+	color: #0068b5;
+	text-align: center;
+}
+#register > div.account {
+	margin-top: 100px;
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: center;
+}
+#register > div.account > a {
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #5c5c5c;
+	text-align: center;
+ }
+#register > div.account > a:first-child {
+	border-right: 1px solid #7ab6e3;
+}
+.horizontal-line {
+	border-top: 2px solid #d1dae8;
+}
+
+
+
+/*** END REGISTER.html ***/
 /*** CLEAR FLOAT ***/
 #top-header-nav > ul:after {
 	display: block;
