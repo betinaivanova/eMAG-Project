@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Register</title>
+    <title>login</title>
     <link rel="icon" type="img/ico" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -11,26 +11,27 @@
     <script type="application/javascript" src="assets/js/script.js"></script>
 </head>
 <body>
-    <div id="register">
+    <div id="login">
         <h1 class="company-logo"><a href="index.html"><img src="assets/img/eshop-logo.png" title="Онлайн винаги ще бъде по-лесно!" alt="eMAG logo" /></a></h1>
         <div class="login-register">
             <form action="" method="POST">
                 <fieldset>
-                    <legend>Добре дошъл!</legend>
-                    <label for="register-name">Попълни име и фамилия</label>
-                    <input id="register-name" type="text" name="name" />
-                    <label for="register-password">Избери сигурна парола</label>
-                    <input id="register-password" type="password" name="register-password" />
-                    <label for="register-repeat-password">Потвърждаване на парола</label>
-                    <input id="register-repeat-password" type="password" name="register-repeat-password" />
-                    <input class="register-check-box" id="agree" type="checkbox" name="agree" value="false"><span for="agree">Прочетох и съм съгласен с Условията <br/>за ползване</span><br/>
-                    <input class="register-check-box" id="offers" type="checkbox" name="offers" value="false"><span for="offers">Искам да бъда винаги запознат с най-актуалните<br/>оферти</span>
-                    <input id="continue-btn" type="submit" name="continue" value="Продължи" />        
+                    <legend>Здравей!</legend>
+                    <label for="login-email">Моля въведи имейл адрес</label>
+                    <input id="login-email" type="email" name="email" />
+                    <input id="continue-btn" type="submit" name="continue" value="Продължи" />
                     <!--<div id="error-box">-->
                     <!--<span class="error"><i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i></span>-->
                     <!--<p class="error-text">задължително поле</p>-->
                     <!--</div>-->
                 </fieldset>
+                <p>Нямаш акаунт? Не се притеснявай!</p>
+                <p>Попълни имейл адреса, с който желаеш да се<br/> регистрираш.</p>
+                <p>или <br/> влез в акаунта си</p>
+                <div class="social-btn">
+                    <a href="#"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i>Facebook</a>
+                    <a href="#"><i class="fa fa-google fa-lg" aria-hidden="true"></i>Google</a>
+                </div>
             </form>
         </div>
         <a href="#">Имаш нужда от помощ?</a>
