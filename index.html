@@ -55,7 +55,7 @@
             <div class="wrapper">
                 <nav id="bottom-nav">
                     <ul>
-                        <li><a href="#">Продукти</a></li>
+                        <li id="products"><i class="fa fa-bars" aria-hidden="true"></i><a href="#">Продукти</a><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></li>
                         <li><a href="#" title="Оферти на седмицата">Оферти на седмицата</a></li>
                         <li><a href="#" title="Абониране за бюлетин">Абониране за бюлетин</a></li>
                         <li><a href="#" title="Разопаковани продукти">Разопаковани продукти</a></li>
@@ -70,16 +70,22 @@
      <div class="wrapper">
          <div class="main-carousel">
              <div>
-                 <img src="assets/img/slider-image.png"/>
-                
+                 <h1>Philips</h1>
+                 <h2>Иновация и качество в технологията!</h2>
+                 <img src="assets/img/slider-image-1.png"/>
+                 <a href="#">Виж продуктите</a>
              </div>
+             <!--<div>-->
+                 <!--<h1>Влез във форма</h1>-->
+                 <!--<h2>спортна екипировка, уреди и аксесоари</h2>-->
+                  <!--<img src="assets/img/slider-image-2.png"/>-->
+             <!--</div>-->
              <div>
-                  <img src="assets/img/slider-image-1.png"/>
+                 <h1>Влез във форма</h1>
+                 <h2>спортна екипировка, уреди и аксесоари</h2>
+                 <img src="assets/img/slider-image-3.png"/>
              </div>
-
-
          </div>
-
      </div>
 
      <!-- START CAROUSEL -->
@@ -93,7 +99,12 @@
   infinite: true,
   speed: 300,
   slidesToShow: 1,
-  adaptiveHeight: true
+  adaptiveHeight: true,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 10000,
+  fade: true,
+  cssEase: 'linear'
       
       });
     });
