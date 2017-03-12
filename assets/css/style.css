@@ -43,7 +43,7 @@ a:hover {
 	width: 100%;
 	height: auto;
 	/*border: 1px solid black;*/
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 }
 .inline {
 	display: inline;
@@ -244,8 +244,11 @@ a:hover {
 	border: 1px solid #eeeeee;
 	box-sizing: border-box;
 }
+#bottom-header-menu ul li:hover {
+	background-color: #fff;
+}
 #bottom-header-menu ul ul {
-	display:none;
+	display: none;
 	width: 200px;
 	position:absolute;
 	top: -3%;
@@ -530,12 +533,112 @@ a:hover {
 
 /*** END CAROUSEL ***/
 
-#info {
+#main-info {
 	margin-top: 20px;
 	width: 100%;
 	height: 80px;
-	border: 1px solid red;
+	border: 1px solid #dce6f0;
+    background-color: #f9fcff;
+	box-sizing: border-box;
 }
+#main-info > article.box {
+	padding: 20px;
+	float: left;
+	width: 233px;
+	border-right: 1px solid #dce6f0;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+}
+#main-info > article.box:last-child {
+	border-right: none;
+}
+#main-info > article.box > span {
+	padding-left: 10px;
+	color: #005596;
+	text-align: center;
+}
+#main-content {
+    margin-top: 20px;
+	width: 100%;
+	height: 800px;
+	border: 1px solid #dce6f0;
+    border-radius: 5px;
+	box-sizing: border-box;
+    background-color: #fff;
+}
+
+/*** START PRODUCT SLIDER ***/
+#product-slider {
+    width: 1050px;
+    margin: 30px auto;
+}
+#product-slider > div.controls > a {
+    color: #888888;
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #888888;
+    box-sizing: border-box;
+}
+.product-slider-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00437d;
+}
+#product-slider div.row {
+    margin: 0;
+}
+#product-slider div.col-item {
+    width: 200px;
+}
+#product-slider div.col-item div.photo img {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    border-bottom: 1px solid #ededed;
+}
+#product-slider div.col-item div.info {
+    width: 200px;
+    color: #090909;
+}
+#product-slider div.col-item div.price {
+    /*width: 50%;*/
+    float: left;
+    margin-top: 5px;
+}
+#product-slider div.col-item div.price h5 {
+    line-height: 20px;
+    margin: 0;
+}
+#product-slider div.price {
+    margin-bottom: 30px;
+}
+#product-slider div.col-item div.price h5:first-child {
+    margin-bottom: 50px;
+}
+#product-slider div.price-text-color {
+    color: #e71e25;
+}
+.see-more-btn{
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #2a77c0;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.see-more-btn > i {
+    padding-right: 5px;
+}
+[data-slide="prev"] {
+    margin-right: 10px;
+}
+
+/*** END PRODUCT SLIDER ***/
+
+
 
 /*** END MAIN PAGE ***/
 
@@ -752,7 +855,8 @@ div.login-register > form > div.social-btn > a:last-child {
 
 
 /*** CLEAR FLOAT ***/
-#top-header-nav > ul:after, #bottom-nav > ul:after, .main-carousel:after, .main-carousel > div:after, #main-content:after, #bottom-header-menu:after{
+#top-header-nav > ul:after, #bottom-nav > ul:after, .main-carousel:after, .main-carousel:after, #slide:after, #bottom-header-menu:after, #main-info:after,
+#main-info > article.box:after{
 	display: block;
 	content: "";
 	clear: both;
