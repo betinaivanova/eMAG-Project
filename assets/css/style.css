@@ -639,8 +639,51 @@ a:hover {
 /*** END PRODUCT SLIDER ***/
 
 
-
 /*** END MAIN PAGE ***/
+
+/*** START FOOTER PAGE ***/
+
+#footer {
+	width: 100%;
+	height: 260px;
+	background-color: #fff;
+	border-top: 2px solid #ededed;
+	box-sizing: border-box;
+}
+#footer > article {
+	padding: 30px;
+	float: left;
+	width: 20%;
+	height: 260px;
+	border-right: 1px solid #ededed;
+	box-sizing: border-box;
+}
+#footer > article:last-child {
+	border: none;
+}
+#footer > article > h1 {
+	font-size: 1.3em;
+	color: #293d4e;
+}
+#footer > article > ul.footer-articles > li {
+	padding-top: 20px;
+}
+#footer > article > ul.footer-articles > li > a {
+	color: #888888;
+}
+#footer > article > ul.footer-articles > li > a.fb-icon {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 50%;
+	border: 2px solid #888888;
+	box-sizing: border-box;
+}
+
+
+/*** END FOOTER PAGE ***/
 
 /*** START LOGIN.html ***/
 
@@ -771,10 +814,10 @@ div.login-register > form > div.social-btn > a:last-child {
 }
 
 
-
 /*** END LOGIN.html ***/
 
 /*** START REGISTER.html ***/
+
 #register {
 	margin: 50px auto;
 	width: 100%;
@@ -856,6 +899,7 @@ div.login-register > form > div.social-btn > a:last-child {
 
 
 /*** START PRODUCT-LIST.html ***/
+
 .product-list {
 	position: absolute;
 }
@@ -1075,11 +1119,7 @@ div.login-register > form > div.social-btn > a:last-child {
 }
 
 
-
-
-
-
-	/*** END PRODUCT-LIST.html ***/
+/*** END PRODUCT-LIST.html ***/
 
 /*** CLEAR FLOAT ***/
 #top-header-nav > ul:after, #bottom-nav > ul:after, .main-carousel:after, .main-carousel:after, #slide:after, #bottom-header-menu:after, #main-info:after,
