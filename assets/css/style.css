@@ -561,7 +561,7 @@ a:hover {
 #main-content {
     margin-top: 20px;
 	width: 100%;
-	height: 800px;
+	height: auto;
 	border: 1px solid #dce6f0;
     border-radius: 5px;
 	box-sizing: border-box;
@@ -616,7 +616,7 @@ a:hover {
 #product-slider div.col-item div.price h5:first-child {
     margin-bottom: 50px;
 }
-#product-slider div.price-text-color {
+#product-slider div.price > h5.price-text-color {
     color: #e71e25;
 }
 .see-more-btn{
@@ -638,6 +638,131 @@ a:hover {
 
 /*** END PRODUCT SLIDER ***/
 
+/*** START MEGA MENU WITH CAROUSEL ***/
+
+#mega-menu-section {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+#mega-menu-section > h1 {
+	padding: 20px;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #00437d;
+}
+#mega-menu-section > article.mega-menu-carousel {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+	height: 345px;
+	border: 1px solid #dfe3e8;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+#mega-menu-section > article.mega-menu-carousel > div {
+	padding: 20px;
+	float: left;
+	width: 20%;
+	height: 345px;
+	border-right: 1px solid #eeeeee;
+	box-sizing: border-box;
+}
+#mega-menu-section > article.mega-menu-carousel > div:first-child {
+	background-color: #f4f7fa;
+}
+#mega-menu-section > article.mega-menu-carousel > div:last-child {
+	border: none;
+}
+#mega-menu-section > article.mega-menu-carousel > div > ul.category > li > a {
+	font-weight: bold;
+	color: #293d5e;
+}
+#mega-menu-section > article.mega-menu-carousel > div > ul.category > li > ul.sub-category  {
+	padding: 10px;
+}
+#mega-menu-section > article.mega-menu-carousel > div > ul.category > li > ul.sub-category > li {
+	padding-top: 5px;
+}
+#mega-menu-section > article.mega-menu-carousel > div > ul.category > li > ul.sub-category > li > a {
+	color: #4a5b6b;
+}
+#mega-menu-section > article.mega-menu-carousel > div.brands {
+	padding: 0;
+}
+#mega-menu-section > article.mega-menu-carousel > div.brands > ul > li {
+	padding-left: 15px;
+	border-bottom: 1px solid #ededed;
+}
+#mega-menu-section > article.mega-menu-carousel > div.brands > ul > li:last-child {
+	border: none;
+}
+#mega-menu-section > article.mega-menu-carousel > div.brands > ul > li > a {
+	display: inline-block;
+	width: 100%;
+	line-height: 60px;
+	vertical-align: middle;
+	color: #4a5b6b;
+}
+#mega-menu-section > article.mega-menu-carousel > div.brands > ul > li > a > i {
+	position: relative;
+	top: 5px;
+	padding-right: 10px;
+}
+#mega-menu-section > article.mega-menu-carousel > div.see-more-products > h1 {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #0061be;
+}
+#mega-menu-section > article.mega-menu-carousel > div.see-more-products > img {
+	display: inline-block;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 180px;
+	height: auto;
+}
+#mega-menu-section > article.mega-menu-carousel > div.mini-carousel > div > div > div > h4 > small{
+	color: #09094e;
+}
+#mega-menu-section > article.mega-menu-carousel > div.mini-carousel > div > div > div > h5 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #e71e25;
+}
+.see-more {
+	text-transform: uppercase;
+	color: #0060b4;
+}
+.see-more:hover {
+	color: #0060b4;
+}
+.see-more > i {
+	padding-right: 10px;
+}
+.carousel-control {
+	width: 30px;
+	height: 30px;
+	top: 60px;
+}
+.left.carousel-control {
+	left: -20px;
+	background: none;
+}
+.carousel-control.right {
+	right: -20px;
+	background: none;
+}
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right {
+	font-size: 12px;
+	background-color: #fff;
+	line-height: 30px;
+	text-shadow: none;
+	color: #333;
+	border: 2px solid #888888;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+	/*** END MEGA MENU WITH CAROUSEL ***/
 
 /*** END MAIN PAGE ***/
 
@@ -1123,7 +1248,7 @@ div.login-register > form > div.social-btn > a:last-child {
 
 /*** CLEAR FLOAT ***/
 #top-header-nav > ul:after, #bottom-nav > ul:after, .main-carousel:after, .main-carousel:after, #slide:after, #bottom-header-menu:after, #main-info:after,
-#main-info > article.box:after, #product-list:after {
+#main-info > article.box:after, #product-list:after, .mega-menu-carousel:after {
 	display: block;
 	content: "";
 	clear: both;
