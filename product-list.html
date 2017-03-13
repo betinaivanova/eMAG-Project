@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product List</title>
+    <link rel="icon" type="img/ico" href="assets/img/favicon.ico">
+    <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- START HEADER -->
+    <header id="main-header">
+        <div class="wrapper">
+            <div id="top-header">
+                <h1 class="company-logo"><a href="index.html"><img src="assets/img/eshop-logo.png" /></a></h1>
+                <div class="input-search">
+                    <input type="text" placeholder="Какво търсиш днес?">
+                    <span class="input-btn">
+                            <button class="btn" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                        </span>
+                </div>
+                <div id="top-header-nav">
+                    <ul>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-user nav-icon"></span>Моят акаунт<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="my-account">
+                                <div class="account-info">
+                                    <a class="top-header-btn" href="login.html">влез в акаунт</a>
+                                    <p>Нямаш акаунт? <a href="login.html">Кликни тук</a></p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-heart nav-icon"></span>Любими<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="favourite">
+                                <div class="favourite-info">
+                                    <p>Трябва да влезеш в акаунта си, за да добавиш продукт в любими</p>
+                                    <a class="top-header-btn" href="login.html">влез в акаунт</a>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart nav-icon"></span>Моята количка<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="bottom-header">
+            <div class="wrapper">
+                <nav id="bottom-nav">
+                    <ul>
+                        <li id="products" class="product-list"><i class="fa fa-bars" aria-hidden="true"></i><a href="#">Продукти</a><span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                            <ul id="product-list-menu">
+                                <li class="dir"><a href="#">Smart технологии</a>
+                                    <ul>
+                                        <li><a href="#">Спорт и здраве</a>
+                                            <ul>
+                                                <li><a href="#">Смарт часовници</a></li>
+                                                <li><a href="#">Фитнес гривни</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">За теб</a>
+                                            <ul>
+                                                <li><a href="#">Смартфони 4G</a></li>
+                                                <li><a href="#">Преносими тонколони</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">За дома</a>
+                                            <ul>
+                                                <li><a href="#">Телевизори 4К</a></li>
+                                                <li><a href="#">Мултимедийни преъри</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="dir"><a href="#">Телефони, Таблети &amp; Лаптопи</a>
+                                    <ul>
+                                        <li><a href="#">Мобилни телефони и аксесоари</a>
+                                            <ul>
+                                                <li><a href="#">Мобилни телефони</a></li>
+                                                <li><a href="#">Калъфи за телефони</a></li>
+                                                <li><a href="#">Зарядни устройства за телефони</a></li>
+                                                <li><a href="#">Батерии за мобилни телефони</a></li>
+                                                <li><a href="#">Карти памет</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Таблети и аксесоари</a>
+                                            <ul>
+                                                <li><a href="#">Таблети</a></li>
+                                                <li><a href="#">Калъфи за таблети</a></li>
+                                                <li><a href="#">Клавиатури за таблети</a></li>
+                                                <li><a href="#">Защитни фолиа за таблети</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Лаптопи и аксесоари</a>
+                                            <ul>
+                                                <li><a href="#">Лаптопи</a></li>
+                                                <li><a href="#">Чанти за лаптопи</a></li>
+                                                <li><a href="#">Хард дискове</a></li>
+                                                <li><a href="#">Охладителни подложки</a></li>
+                                                <li><a href="#">Батерии</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Джаджи &amp; Smart технологии</a>
+                                            <ul>
+                                                <li><a href="#">Smartwatch</a></li>
+                                                <li><a href="#">Фитнес гривни</a></li>
+                                                <li><a href="#">Други джаджи</a></li>
+                                                <li><a href="#">Преносими безжички тонколони</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Компютри &amp; Периферия</a></li>
+                                <li><a href="#">TV, Електроника &amp; Gaming</a></li>
+                                <li><a href="#">Фото, Видео &amp; Оптика</a></li>
+                                <li><a href="#">Електроуреди</a></li>
+                                <li><a href="#">Мода</a></li>
+                                <li><a href="#">Здраве и красота</a></li>
+                                <li><a href="#">Дом, Градина &amp; Petshop</a></li>
+                                <li><a href="#">Книги &amp; Офис консумативи</a></li>
+                                <li><a href="#">Спорт &amp; свободно време</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" title="Оферти на седмицата">Оферти на седмицата</a></li>
+                        <li><a href="#" title="Абониране за бюлетин">Абониране за бюлетин</a></li>
+                        <li><a href="#" title="Разопаковани продукти">Разопаковани продукти</a></li>
+                        <li><i class="fa fa-headphones fa-lg" aria-hidden="true"></i><a href="#" title="eMAG инфо">eMAG инфо</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+<!-- END HEADER -->
+
+    <div class="wrapper">
+        <section id="product-list">
+            <ul class="breadcrumbs">
+                <li><a href="#">Телефони, Таблети &amp; Лаптопи</a><i class="fa fa-angle-double-right"></i></li>
+                <li><a href="#">Мобилни телефони и аксесоари</a><i class="fa fa-angle-double-right"></i></li>
+                <li><a href="#">Мобилни телефони</a></li>
+            </ul>
+            <div class="title-product-list">
+                <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+                <h1>Мобилни телефони</h1>
+            </div>
+            <section id="left-aside">
+                <aside class="left-aside-nav">
+                    <ul>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Мобилни телефони</a></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Калъфи за телефони</a></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Защитни фолиа за телефони</a></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Зарядни устройства за телефони</a></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Батерии за мобилни телефони</a></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Кабели и адаптери за телефони</a></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Карти памет</a></li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i><a href="#">Комплекти</a></li>
+                    </ul>
+                </aside>
+                <aside class="left-aside-checkbox">
+                    <h1>Цена (лв.): </h1>
+                    <ul>
+                        <li><input type="checkbox" /><label><a href="">Под 50 (18)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">50 - 100 (41)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">100 - 200 (148)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">200 - 500 (368)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">500 - 1.000 (245)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">1.000 - 1.500 (110)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">над 2.000 (6)</a></label></li>
+                    </ul>
+                </aside>
+                <aside class="left-aside-checkbox">
+                    <h1>Производител: </h1>
+                    <ul>
+                        <li><input type="checkbox" /><label><a href="">Lenovo (111)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Apple (104)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Samsung (93)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">HTC (73)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Huawei (68)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">LG (50)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">ASUS (37)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Nokia (34)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Sony (33)</a></label></li>
+                    </ul>
+                </aside>
+                <aside class="left-aside-checkbox">
+                    <h1>Тип телефон: </h1>
+                    <ul>
+                        <li><input type="checkbox" /><label><a href="">Смартфон (599)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Класически (33)</a></label></li>
+                    </ul>
+                </aside>
+                <aside class="left-aside-checkbox">
+                    <h1>Технологии: </h1>
+                    <ul>
+                        <li><input type="checkbox" /><label><a href="">3G (540)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">4G - FDD (446)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">4G - TDD (172)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">GPS (535)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">NFC (201)</a></label></li>
+                    </ul>
+                </aside>
+                <aside class="left-aside-checkbox">
+                    <h1>Sim слотове: </h1>
+                    <ul>
+                        <li><input type="checkbox" /><label><a href="">Single Sim (446)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Dual Sim (497)</a></label></li>
+                    </ul>
+                </aside>
+                <aside class="left-aside-checkbox">
+                    <h1>Операционна система: </h1>
+                    <ul>
+                        <li><input type="checkbox" /><label><a href="">Android (723)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">iOS (104)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Windows (23)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Други (19)</a></label></li>
+                    </ul>
+                </aside>
+                <aside class="left-aside-checkbox">
+                    <h1>Диагонал на дисплея<br/>(инч): </h1>
+                    <ul>
+                        <li><input type="checkbox" /><label><a href="">Под 3.5" (60)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">3.5" - 3.9" (5)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">4" - 4.9" (135)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">5" - 5.5" (535)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Над 5.5" (29)</a></label></li>
+                    </ul>
+                </aside>
+                <aside class="left-aside-checkbox">
+                    <h1>Резолюция на главна<br/>камера(Mp): </h1>
+                    <ul>
+                        <li><input type="checkbox" /><label><a href="">Под 5 MP (40)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">5 - 10 MP (262)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Над 10 MP (532)</a></label></li>
+                    </ul>
+                </aside>
+                <aside class="left-aside-checkbox">
+                    <h1>Модел процесор: </h1>
+                    <ul>
+                        <li><input type="checkbox" /><label><a href="">Dual Core (40)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Quad Core (310)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Hexa Core (21)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Octa Core (219)</a></label></li>
+                    </ul>
+                </aside>
+                <aside class="left-aside-checkbox">
+                    <h1>RAM памет: </h1>
+                    <ul>
+                        <li><input type="checkbox" /><label><a href="">Под 1 GB (62)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">1 GB (182)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">1.5 - 2 GB (320)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">3 - 4 GB (251)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Над 4 GB (3)</a></label></li>
+                    </ul>
+                </aside>
+                <aside class="left-aside-checkbox">
+                    <h1>Вътрешна памет: </h1>
+                    <ul>
+                        <li><input type="checkbox" /><label><a href="">Под 4 GB (33)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">4 GB (28)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">8 GB (202)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">16 GB (202)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">32 GB (202)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">64 GB (202)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">128 GB (202)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">256 GB (202)</a></label></li>
+                    </ul>
+                </aside>
+                <aside class="left-aside-checkbox">
+                    <h1>Капацитет (mAh): </h1>
+                    <ul>
+                        <li><input type="checkbox" /><label><a href="">Под 1000 (15)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">1000 - 2000 (96)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">2000 - 4000 (557)</a></label></li>
+                        <li><input type="checkbox" /><label><a href="">Над 4000 (32)</a></label></li>
+                    </ul>
+                </aside>
+            </section>
+            <section id="right-aside">
+                <article class="right-aside-product-list">
+                    <div class="product-list-image">
+                        <img src="assets/img/product-list-image-1.jpg"  />
+                    </div>
+                    <div class="product-list-description">
+                        <h1>Смартфон Wink World SE, Dual SIM, 8GB, 3G, Черен</h1>
+                        <!--<div class="table">-->
+                            <!--<div class="table-row">-->
+                                <!--<div class="table-cell">Sim слотове: </div>-->
+                                <!--<div class="table-cell">Dual Sim</div>-->
+                            <!--</div>-->
+                            <!--<div class="table-row">-->
+                                <!--<div class="table-cell">Модел процесор: </div>-->
+                                <!--<div class="table-cell">Quad Core</div>-->
+                            <!--</div>-->
+                            <!--<div class="table-row">-->
+                                <!--<div class="table-cell">Операционна система: </div>-->
+                                <!--<div class="table-cell">Android</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="table">-->
+                            <!--<div class="table-row">-->
+                                <!--<div class="table-cell">Диагонал на дисплея(инч): </div>-->
+                                <!--<div class="table-cell">4</div>-->
+                            <!--</div>-->
+                            <!--<div class="table-row">-->
+                                <!--<div class="table-cell">Резолюция главна камера(Мp): </div>-->
+                                <!--<div class="table-cell">5</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="product-list-add-card">
+                        <p class="product-list-price">59<sup>99</sup>лв.</p>
+                        <p>В наличност</p>
+                        <a href="#" class="see-more-btn add-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>добави в количка</a>
+                    </div>
+                </article>
+                <article class="right-aside-product-list">
+                    <div class="product-list-image">
+                        <img src="assets/img/product-list-image-1.jpg"  />
+                    </div>
+                    <div class="product-list-description">
+                        <h1>Смартфон Wink World SE, Dual SIM, 8GB, 3G, Черен</h1>
+
+                    </div>
+                    <div class="product-list-add-card">
+                        <p class="product-list-price">59<sup>99</sup>лв.</p>
+                        <p>В наличност</p>
+                        <a href="#" class="see-more-btn add-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>добави в количка</a>
+                    </div>
+                </article>
+                <article class="right-aside-product-list">
+                    <div class="product-list-image">
+                        <img src="assets/img/product-list-image-1.jpg"  />
+                    </div>
+                    <div class="product-list-description">
+                        <h1>Смартфон Wink World SE, Dual SIM, 8GB, 3G, Черен</h1>
+
+                    </div>
+                    <div class="product-list-add-card">
+                        <p class="product-list-price">59<sup>99</sup>лв.</p>
+                        <p>В наличност</p>
+                        <a href="#" class="see-more-btn add-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>добави в количка</a>
+                    </div>
+                </article>
+                <article class="right-aside-product-list">
+                    <div class="product-list-image">
+                        <img src="assets/img/product-list-image-1.jpg"  />
+                    </div>
+                    <div class="product-list-description">
+                        <h1>Смартфон Wink World SE, Dual SIM, 8GB, 3G, Черен</h1>
+
+                    </div>
+                    <div class="product-list-add-card">
+                        <p class="product-list-price">59<sup>99</sup>лв.</p>
+                        <p>В наличност</p>
+                        <a href="#" class="see-more-btn add-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>добави в количка</a>
+                    </div>
+                </article>
+                <article class="right-aside-product-list">
+                    <div class="product-list-image">
+                        <img src="assets/img/product-list-image-1.jpg"  />
+                    </div>
+                    <div class="product-list-description">
+                        <h1>Смартфон Wink World SE, Dual SIM, 8GB, 3G, Черен</h1>
+
+                    </div>
+                    <div class="product-list-add-card">
+                        <p class="product-list-price">59<sup>99</sup>лв.</p>
+                        <p>В наличност</p>
+                        <a href="#" class="see-more-btn add-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>добави в количка</a>
+                    </div>
+                </article>
+                <article class="right-aside-product-list">
+                    <div class="product-list-image">
+                        <img src="assets/img/product-list-image-1.jpg"  />
+                    </div>
+                    <div class="product-list-description">
+                        <h1>Смартфон Wink World SE, Dual SIM, 8GB, 3G, Черен</h1>
+
+                    </div>
+                    <div class="product-list-add-card">
+                        <p class="product-list-price">59<sup>99</sup>лв.</p>
+                        <p>В наличност</p>
+                        <a href="#" class="see-more-btn add-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>добави в количка</a>
+                    </div>
+                </article>
+                <article class="right-aside-product-list">
+                    <div class="product-list-image">
+                        <img src="assets/img/product-list-image-1.jpg"  />
+                    </div>
+                    <div class="product-list-description">
+                        <h1>Смартфон Wink World SE, Dual SIM, 8GB, 3G, Черен</h1>
+
+                    </div>
+                    <div class="product-list-add-card">
+                        <p class="product-list-price">59<sup>99</sup>лв.</p>
+                        <p>В наличност</p>
+                        <a href="#" class="see-more-btn add-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>добави в количка</a>
+                    </div>
+                </article>
+                <article class="right-aside-product-list">
+                    <div class="product-list-image">
+                        <img src="assets/img/product-list-image-1.jpg"  />
+                    </div>
+                    <div class="product-list-description">
+                        <h1>Смартфон Wink World SE, Dual SIM, 8GB, 3G, Черен</h1>
+
+                    </div>
+                    <div class="product-list-add-card">
+                        <p class="product-list-price">59<sup>99</sup>лв.</p>
+                        <p>В наличност</p>
+                        <a href="#" class="see-more-btn add-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>добави в количка</a>
+                    </div>
+                </article>
+                <article class="right-aside-product-list">
+                    <div class="product-list-image">
+                        <img src="assets/img/product-list-image-1.jpg"  />
+                    </div>
+                    <div class="product-list-description">
+                        <h1>Смартфон Wink World SE, Dual SIM, 8GB, 3G, Черен</h1>
+
+                    </div>
+                    <div class="product-list-add-card">
+                        <p class="product-list-price">59<sup>99</sup>лв.</p>
+                        <p>В наличност</p>
+                        <a href="#" class="see-more-btn add-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>добави в количка</a>
+                    </div>
+                </article>
+                <article class="right-aside-product-list">
+                    <div class="product-list-image">
+                        <img src="assets/img/product-list-image-1.jpg"  />
+                    </div>
+                    <div class="product-list-description">
+                        <h1>Смартфон Wink World SE, Dual SIM, 8GB, 3G, Черен</h1>
+
+                    </div>
+                    <div class="product-list-add-card">
+                        <p class="product-list-price">59<sup>99</sup>лв.</p>
+                        <p>В наличност</p>
+                        <a href="#" class="see-more-btn add-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i>добави в количка</a>
+                    </div>
+                </article>
+
+            </section>
+        </section>
+    </div>
+
+</body>
+</html>
