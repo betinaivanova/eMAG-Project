@@ -810,6 +810,35 @@ a:hover {
 
 /*** END FOOTER PAGE ***/
 
+/*** BACK TO TOP BUTTON ***/
+
+.scrollToTop{
+	width: 60px;
+	height: 60px;
+	padding: 10px;
+	text-align: center;
+	background: #fff;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #7b8a96;
+	text-decoration: none;
+	position: fixed;
+	bottom: 75px;
+	right: 40px;
+	display: none;
+	border: 1px solid #dfe3e8;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+	color: #7b8a96;
+}
+
+
+
+/*** ------------------- ***/
+
 /*** START LOGIN.html ***/
 
 #login {
