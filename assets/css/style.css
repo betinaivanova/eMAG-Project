@@ -472,7 +472,6 @@ a:hover {
 .slide_style_center {
 	text-align: center !important;
 }
-
 .slide-text {
 	top: -4%;
 	left: -5%;
@@ -482,9 +481,7 @@ a:hover {
 	position: absolute;
 	text-align: left;
 	padding: 10px 85px;
-
 }
-
 .slide-text > h1 {
 	padding: 0;
 	color: #005eb8;
@@ -834,7 +831,6 @@ a:hover {
 	text-decoration:none;
 	color: #7b8a96;
 }
-
 
 
 /*** ------------------- ***/
@@ -1239,18 +1235,6 @@ div.login-register > form > div.social-btn > a:last-child {
 	font-weight: bold;
 	color: #000;
 }
-/*div.table {*/
-	/*margin-top: 30px;*/
-	/*width: auto;*/
-	/*display: table;*/
-	/*float: left;*/
-/*}*/
-/*div.table-row {*/
-	/*display: table-row;*/
-/*}*/
-/*div.table-cell {*/
-	/*display: table-cell;*/
-/*}*/
 #product-list > section#right-aside > article.right-aside-product-list > div.product-list-add-card {
 	padding: 20px;
 	margin-top: 30px;
@@ -1275,9 +1259,167 @@ div.login-register > form > div.social-btn > a:last-child {
 
 /*** END PRODUCT-LIST.html ***/
 
+/*** START PRODUCT.html ***/
+
+#product {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	height: 700px;
+	box-sizing: border-box;
+}
+#product > h1 {
+	margin-bottom: 20px;
+	font-size: 2.0em;
+	color: #3c3c3c;
+}
+#product > p {
+	color: #b7b7b7;
+}
+#product > hr {
+	width: 100%;
+	color: #b7b7b7;
+}
+#more-product-info {
+	width: 100%;
+	height: 600px;
+	background-color: #fff;
+}
+#more-product-info > div {
+	float: left;
+	height: 600px;
+	box-sizing: border-box;
+}
+#more-product-info > div.image-gallery div.row {
+	margin: 0;
+}
+#more-product-info > div.image-gallery {
+	width: 47.32142857142857%;
+}
+#more-product-info > div:nth-child(2) {
+	width: 23.214285714285715%;
+	padding-top: 100px;
+	padding-left: 20px;
+	color: #646464;
+}
+#more-product-info > div:nth-child(2) > p {
+	margin-bottom: 15px;
+}
+#more-product-info > div:nth-child(2) > p > i {
+	padding-right: 10px;
+}
+#more-product-info > div:nth-child(2) > p:first-child {
+	color: #a7a7a7;
+}
+#more-product-info > div:nth-child(3) {
+	width: 29.464285714285715%;
+	padding: 20px;
+	color: #222222;
+}
+#more-product-info > div:nth-child(3) > p {
+	margin-bottom: 20px;
+}
+#more-product-info > div:nth-child(3) > p.price {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #ef2809;
+}
+#more-product-info > div:nth-child(3) > p.stock {
+	display: inline-block;
+	padding: 5px;
+	border-radius: 2px;
+	background-color: #009900;
+}
+#more-product-info > div:nth-child(3) > a.add-btn {
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	text-transform: uppercase;
+}
+#more-product-info > div:nth-child(3) > a.add-btn:hover {
+	background-color: #004485;
+}
+#more-product-info > div:nth-child(3) > a.add-btn > i {
+	float: left;
+	padding: 8px;
+	vertical-align: middle;
+}
+#more-product-info > div:nth-child(3) > p.stock > span {
+	font-weight: bold;
+	color: #fff;
+}
+#more-product-info ul.hide-bullets {
+	list-style:none;
+	margin-left: -40px;
+	margin-top:20px;
+}
+#more-product-info a.thumbnail {
+	padding: 0;
+}
+#more-product-info div.carousel-inner >.item > img, .carousel-inner > .item > a > img {
+	width: 100%;
+}
+#more-product-info div#slider {
+	width: 530px;
+	position: absolute;
+}
+#more-product-info div#slider-thumbs {
+	position: relative;
+	top: 510px;
+	left: -220px
+}
+#more-product-info li.col-sm-3 {
+		width: 33%;
+}
+#product-specifications {
+	padding-top: 30px;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+}
+#product-specifications > h1 {
+	margin-bottom: 30px;
+	font-size: 2.0em;
+	font-weight: normal;
+}
+div.table {
+	width: 100%;
+	display: table;
+}
+div.table-row {
+	width: 100%;
+	display: table-row;
+}
+div.table-cell {
+	padding: 15px;
+	display: table-cell;
+}
+div.table-caption {
+	margin-bottom: 20px;
+	width: 100%;
+	text-transform: uppercase;
+	color: #303030;
+	font-weight: bold;
+}
+div.table-row:nth-child(n) {
+	background-color: #eff9fe;
+}
+div.table-row:nth-child(2n) {
+	background-color: #fff;
+}
+div.table-row > div.table-cell:first-child {
+	width: 30%;
+	color: #919292;
+}
+div.table-row > div.table-cell:nth-child(2) {
+	width: 70%;
+	color: #222222;
+}
+	/*** END PRODUCT.html ***/
+
 /*** CLEAR FLOAT ***/
 #top-header-nav > ul:after, #bottom-nav > ul:after, .main-carousel:after, .main-carousel:after, #slide:after, #bottom-header-menu:after, #main-info:after,
-#main-info > article.box:after, #product-list:after, .mega-menu-carousel:after {
+#main-info > article.box:after, #product-list:after, .mega-menu-carousel:after, #more-product-info:after {
 	display: block;
 	content: "";
 	clear: both;

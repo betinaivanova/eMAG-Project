@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product</title>
+    <link rel="icon" type="img/ico" href="assets/img/favicon.ico">
+    <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+<!-- START HEADER -->
+<header id="main-header">
+    <div class="wrapper">
+        <div id="top-header">
+            <h1 class="company-logo"><a href="index.html"><img src="assets/img/emag-logo.png" /></a></h1>
+            <div class="input-search">
+                <input type="text" placeholder="Какво търсиш днес?">
+                <span class="input-btn">
+                            <button class="btn" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                        </span>
+            </div>
+            <div id="top-header-nav">
+                <ul>
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-user nav-icon"></span>Моят акаунт<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div class="my-account">
+                            <div class="account-info">
+                                <a class="top-header-btn" href="login.html">влез в акаунт</a>
+                                <p>Нямаш акаунт? <a href="login.html">Кликни тук</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-heart nav-icon"></span>Любими<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div class="favourite">
+                            <div class="favourite-info">
+                                <p>Трябва да влезеш в акаунта си, за да добавиш продукт в любими</p>
+                                <a class="top-header-btn" href="login.html">влез в акаунт</a>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart nav-icon"></span>Моята количка<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="bottom-header">
+        <div class="wrapper">
+            <nav id="bottom-nav">
+                <ul>
+                    <li id="products" class="product-list"><i class="fa fa-bars" aria-hidden="true"></i><a href="#">Продукти</a><span><i class="fa fa-angle-down" aria-hidden="true"></i></span>
+                        <ul id="product-list-menu">
+                            <li class="dir"><a href="#">Smart технологии</a>
+                                <ul>
+                                    <li><a href="#">Спорт и здраве</a>
+                                        <ul>
+                                            <li><a href="#">Смарт часовници</a></li>
+                                            <li><a href="#">Фитнес гривни</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">За теб</a>
+                                        <ul>
+                                            <li><a href="#">Смартфони 4G</a></li>
+                                            <li><a href="#">Преносими тонколони</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">За дома</a>
+                                        <ul>
+                                            <li><a href="#">Телевизори 4К</a></li>
+                                            <li><a href="#">Мултимедийни преъри</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dir"><a href="#">Телефони, Таблети &amp; Лаптопи</a>
+                                <ul>
+                                    <li><a href="#">Мобилни телефони и аксесоари</a>
+                                        <ul>
+                                            <li><a href="#">Мобилни телефони</a></li>
+                                            <li><a href="#">Калъфи за телефони</a></li>
+                                            <li><a href="#">Зарядни устройства за телефони</a></li>
+                                            <li><a href="#">Батерии за мобилни телефони</a></li>
+                                            <li><a href="#">Карти памет</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Таблети и аксесоари</a>
+                                        <ul>
+                                            <li><a href="#">Таблети</a></li>
+                                            <li><a href="#">Калъфи за таблети</a></li>
+                                            <li><a href="#">Клавиатури за таблети</a></li>
+                                            <li><a href="#">Защитни фолиа за таблети</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Лаптопи и аксесоари</a>
+                                        <ul>
+                                            <li><a href="#">Лаптопи</a></li>
+                                            <li><a href="#">Чанти за лаптопи</a></li>
+                                            <li><a href="#">Хард дискове</a></li>
+                                            <li><a href="#">Охладителни подложки</a></li>
+                                            <li><a href="#">Батерии</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Джаджи &amp; Smart технологии</a>
+                                        <ul>
+                                            <li><a href="#">Smartwatch</a></li>
+                                            <li><a href="#">Фитнес гривни</a></li>
+                                            <li><a href="#">Други джаджи</a></li>
+                                            <li><a href="#">Преносими безжички тонколони</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Компютри &amp; Периферия</a></li>
+                            <li><a href="#">TV, Електроника &amp; Gaming</a></li>
+                            <li><a href="#">Фото, Видео &amp; Оптика</a></li>
+                            <li><a href="#">Електроуреди</a></li>
+                            <li><a href="#">Мода</a></li>
+                            <li><a href="#">Здраве и красота</a></li>
+                            <li><a href="#">Дом, Градина &amp; Petshop</a></li>
+                            <li><a href="#">Книги &amp; Офис консумативи</a></li>
+                            <li><a href="#">Спорт &amp; свободно време</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Оферти на седмицата">Оферти на седмицата</a></li>
+                    <li><a href="#" title="Абониране за бюлетин">Абониране за бюлетин</a></li>
+                    <li><a href="#" title="Разопаковани продукти">Разопаковани продукти</a></li>
+                    <li><i class="fa fa-headphones fa-lg" aria-hidden="true"></i><a href="#" title="eMAG инфо">eMAG инфо</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- END HEADER -->
+
+<div class="wrapper">
+    <section id="product-list">
+        <ul class="breadcrumbs">
+            <li><a href="#">Телефони, Таблети &amp; Лаптопи</a><i class="fa fa-angle-double-right"></i></li>
+            <li><a href="#">Мобилни телефони и аксесоари</a><i class="fa fa-angle-double-right"></i></li>
+            <li><a href="#">Мобилни телефони</a></li>
+        </ul>
+        <div id="product">
+            <h1>Смартфон Wink City S, Dual SIM, 8GB, 3G, Black</h1>
+            <p>Код на продукта: Wink_City_S</p>
+            <hr />
+            <div id="more-product-info">
+                <div class="image-gallery">
+                    <div id="main_area">
+                        <!-- Slider -->
+                        <div class="col-sm-6">
+                            <div class="col-xs-12" id="slider">
+                                <!-- Top part of the slider -->
+                                <div class="row">
+                                    <div class="col-sm-12" id="carousel-bounding-box">
+                                        <div class="carousel slide" id="myCarousel">
+                                            <!-- Carousel items -->
+                                            <div class="carousel-inner">
+                                                <div class="active item" data-slide-number="0">
+                                                    <img src="assets/img/1.jpg"></div>
+
+                                                <div class="item" data-slide-number="1">
+                                                    <img src="assets/img/2.jpg"></div>
+
+                                                <div class="item" data-slide-number="2">
+                                                    <img src="assets/img/3.jpg"></div>
+
+                                                <div class="item" data-slide-number="3">
+                                                    <img src="http://placehold.it/470x480&text=3"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/Slider-->
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6" id="slider-thumbs">
+                            <!-- Bottom switcher of slider -->
+                            <ul class="hide-bullets">
+                                <li class="col-sm-3">
+                                    <a class="thumbnail" id="carousel-selector-0">
+                                        <img src="assets/img/1.jpg">
+                                    </a>
+                                </li>
+
+                                <li class="col-sm-3">
+                                    <a class="thumbnail" id="carousel-selector-1"><img src="assets/img/2.jpg"></a>
+                                </li>
+
+                                <li class="col-sm-3">
+                                    <a class="thumbnail" id="carousel-selector-2"><img src="assets/img/3.jpg"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>Предлаган от:</p>
+                    <p>eMAG</p>
+                    <p><i class="fa fa-truck" aria-hidden="true"></i>Безплатна доставка</p>
+                    <p><i class="fa fa-archive" aria-hidden="true"></i>Проверка на пратката</p>
+                </div>
+                <div>
+                    <p class="price">132<sup>00</sup>лв.</p>
+                    <p class="stock"><span>В наличност</span></p>
+                    <p>Включена гаранция</p>
+                    <p>Физическо лице: 24 месеца</p>
+                    <a href="#" class="see-more-btn add-btn"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>Добави в количка</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="product-specifications">
+        <h1>Спецификации</h1>
+        <div class="table-caption">Характеристики</div>
+        <div class="table">
+            <div class="table-row">
+                <div class="table-cell">Клавиатура</div>
+                <div class="table-cell">Стандартна</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Тип телефон</div>
+                <div class="table-cell">Smartphone</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Sim слотове</div>
+                <div class="table-cell">Dual Sim</div>
+            </div>
+        </div>
+        <div class="table-caption">Основни</div>
+        <div class="table">
+            <div class="table-row">
+                <div class="table-cell">Touchscreen</div>
+                <div class="table-cell">Да</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Клавиатура QWERTY</div>
+                <div class="table-cell">Не</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Вид клавиатура</div>
+                <div class="table-cell">Стандартна</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Модел процесор</div>
+                <div class="table-cell">MTK6580 Quad Core</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Честота процесор (MHz)</div>
+                <div class="table-cell">1300</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Цвят</div>
+                <div class="table-cell">Черен</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Цвят</div>
+                <div class="table-cell">Черен</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">GPS</div>
+                <div class="table-cell">Да</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Тегло (гр)</div>
+                <div class="table-cell">139</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Операционна система</div>
+                <div class="table-cell">Android v6.0 (Marshmallow)</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Тегло (гр)</div>
+                <div class="table-cell">139</div>
+            </div>
+        </div>
+        <div class="table-caption">Памет</div>
+        <div class="table">
+            <div class="table-row">
+                <div class="table-cell">Вътрешна памет</div>
+                <div class="table-cell">8 GB</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">RAM памет</div>
+                <div class="table-cell">1 GB</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Слот памет (тип)</div>
+                <div class="table-cell">Micro SD</div>
+            </div>
+        </div>
+        <div class="table-caption">Дисплей</div>
+        <div class="table">
+            <div class="table-row">
+                <div class="table-cell">Тип дисплей</div>
+                <div class="table-cell">IPS HD</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Резолюция (пиксели)</div>
+                <div class="table-cell">1280 x 720</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Брой цветове</div>
+                <div class="table-cell">16 М</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Диагонал на дисплея (инч)</div>
+                <div class="table-cell">5.0</div>
+            </div>
+        </div>
+        <div class="table-caption">Батерия</div>
+        <div class="table">
+            <div class="table-row">
+                <div class="table-cell">Време на разговори</div>
+                <div class="table-cell">6 часа</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Издръжливост в standby</div>
+                <div class="table-cell">200 часа</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Капацитет (mAh)</div>
+                <div class="table-cell">2050</div>
+            </div>
+            <div class="table-row">
+                <div class="table-cell">Тип батерия</div>
+                <div class="table-cell">Li-Ion</div>
+                </div>
+            </div>
+    </section>
+</div>
+<footer id="footer">
+    <article>
+        <h1>Услуги</h1>
+        <ul class="footer-articles">
+            <li><a href="">Проверка на пратката</a></li>
+            <li><a href="">30 дни право на връщане</a></li>
+            <li><a href="">Гаранция и сервиз</a></li>
+            <li><a href="">Плащане на вноски</a></li>
+        </ul>
+    </article>
+    <article>
+        <h1>Поръчки и доставка</h1>
+        <ul class="footer-articles">
+            <li><a href="">Моят акаунт</a></li>
+            <li><a href="">Как да поръчам онлайн</a></li>
+            <li><a href="">Доставка на поръчките</a></li>
+            <li><a href="">Често задавани въпроси</a></li>
+        </ul>
+    </article>
+    <article>
+        <h1>Връзка с нас</h1>
+        <ul class="footer-articles">
+            <li><a href="">Контакт</a></li>
+            <li><a href="">Формуляр поправка на продукт</a></li>
+            <li><a href="">Формуляр връщане на продукт</a></li>
+            <li><a href="">Формуляр рекламации и жалби</a></li>
+        </ul>
+    </article>
+    <article>
+        <h1>eMAG.bg</h1>
+        <ul class="footer-articles">
+            <li><a href="">За връзка с нас</a></li>
+            <li><a href="">Условия за ползване</a></li>
+            <li><a href="">Лични данни</a></li>
+            <li><a href="">Платформа за ОРС</a></li>
+        </ul>
+    </article>
+    <article>
+        <h1>Научи повече</h1>
+        <ul class="footer-articles">
+            <li><a href="">eMAG Кариера</a></li>
+            <li><a href="">Блог</a></li>
+            <li><a href="">Афилиейт програма</a></li>
+            <li><a href="">eMAG Marketplace</a></li>
+            <li><a class="fb-icon" href=""><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+        </ul>
+    </article>
+</footer>
+<a href="#" class="scrollToTop"><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i>Начало</a>
+</body>
+<script>
+    jQuery(document).ready(function($) {
+        $('#myCarousel').carousel({
+            interval: 0
+        });
+        //Handles the carousel thumbnails
+        $('[id^=carousel-selector-]').hover(function () {
+            var id_selector = $(this).attr("id");
+            try {
+                var id = /-(\d+)$/.exec(id_selector)[1];
+                console.log(id_selector, id);
+                jQuery('#myCarousel').carousel(parseInt(id));
+            } catch (e) {
+                console.log('Regex failed!', e);
+            }
+        });
+        // When the carousel slides, auto update the text
+        $('#myCarousel').on('slid.bs.carousel', function (e) {
+            var id = $('.item.active').data('slide-number');
+            $('#carousel-text').html($('#slide-content-'+id).html());
+        });
+    });
+</script>
+</html>
