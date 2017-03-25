@@ -33,11 +33,18 @@
         div.appendChild(paragraph);
     }
 
+
     document.getElementById('register-email').addEventListener('focus',function() {
-        document.getElementById('register-email').value = ' ';
+        document.getElementById('register-email').value = '';
     },false)
     document.getElementById('register-password').addEventListener('focus',function() {
-        document.getElementById('register-password').value = ' ';
+        document.getElementById('register-password').value = '';
+    },false)
+    document.getElementById('register-password').addEventListener('focus',function() {
+        document.getElementById('register-repeat-password').value = '';
+    },false)
+    document.getElementById('register-password').addEventListener('focus',function() {
+        document.getElementById('register-name').value = '';
     },false)
 
 var registerBtn = document.getElementById('register-btn');
