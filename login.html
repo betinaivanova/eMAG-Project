@@ -17,12 +17,12 @@
                 <fieldset>
                     <legend>Здравей!</legend>
                     <label for="login-email">Моля въведи имейл адрес</label>
+                    <div class="msg-box">
+                        <!--<span class="error"><i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i></span>
+                        <p class="error-text">задължително поле</p>-->
+                    </div>
                     <input id="login-email" type="email" name="email" />
                     <input id="continue-btn" type="submit" name="continue" value="Продължи" />
-                    <!--<div id="error-box">-->
-                    <!--<span class="error"><i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i></span>-->
-                    <!--<p class="error-text">задължително поле</p>-->
-                    <!--</div>-->
                 </fieldset>
                 <p>Нямаш акаунт? Не се притеснявай!</p>
                 <p>Попълни имейл адреса, с който желаеш да се<br/> регистрираш.</p>
@@ -40,5 +40,7 @@
         </div>
         <div class="horizontal-line"></div>
     </div>
+<script src="assets/js/user_registration/userController.js"></script>
+<script src="assets/js/user_registration/userService.js"></script>
 </body>
 </html>

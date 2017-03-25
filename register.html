@@ -8,7 +8,6 @@
     <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script type="application/javascript" src="assets/js/script.js"></script>
 </head>
 <body>
     <div id="register">
@@ -17,19 +16,22 @@
             <form action="" method="POST">
                 <fieldset>
                     <legend>Добре дошъл!</legend>
+                    <p id="email-text"></p>
                     <label for="register-name">Попълни име и фамилия</label>
                     <input id="register-name" type="text" name="name" />
+                    <div class="msg-box"></div>
+                    <label for="register-email">Въведи имейл</label>
+                    <input id="register-email" type="email" name="email" />
+                    <div class="msg-box"></div>
                     <label for="register-password">Избери сигурна парола</label>
                     <input id="register-password" type="password" name="register-password" />
+                    <div class="msg-box"></div>
                     <label for="register-repeat-password">Потвърждаване на парола</label>
                     <input id="register-repeat-password" type="password" name="register-repeat-password" />
+                    <div class="msg-box"></div>
                     <input class="register-check-box" id="agree" type="checkbox" name="agree" value="false"><span for="agree">Прочетох и съм съгласен с Условията <br/>за ползване</span><br/>
                     <input class="register-check-box" id="offers" type="checkbox" name="offers" value="false"><span for="offers">Искам да бъда винаги запознат с най-актуалните<br/>оферти</span>
-                    <input id="continue-btn" type="submit" name="continue" value="Продължи" />        
-                    <!--<div id="error-box">-->
-                    <!--<span class="error"><i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i></span>-->
-                    <!--<p class="error-text">задължително поле</p>-->
-                    <!--</div>-->
+                    <input id="register-btn" type="submit" name="continue" value="Продължи" />        
                 </fieldset>
             </form>
         </div>
@@ -41,4 +43,6 @@
         <div class="horizontal-line"></div>
     </div>
 </body>
+<script src="assets/js/user_registration/userController.js"></script>
+<script src="assets/js/user_registration/userService.js"></script>
 </html>

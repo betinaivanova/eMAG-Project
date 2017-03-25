@@ -152,7 +152,7 @@ a:hover {
 	#top-header-nav > ul > li > div.favourite > div.favourite-info > a {
 		margin-top: 20px;
 		width: 260px;
-		height: 35px;
+		line-height: 35px;
 	}
 	#top-header-nav > ul > li > div.favourite > div.favourite-info > p {
 		text-align: justify;
@@ -165,8 +165,9 @@ a:hover {
 		text-decoration: underline;
 	}
 	.top-header-btn {
-		padding: 10px;
 		display: inline-block;
+		line-height: 30px;
+		vertical-align: middle;
 		color: #eaf1f7;
 		background-color: #1963a1;
 		border-radius: 5px;
@@ -193,6 +194,7 @@ a:hover {
 	padding-left: 15px;
 	color: #fff;
 	background-color: #00aff5;
+	z-index: 10;
 }
 #bottom-nav > ul > li#products > span > i {
 	padding-left: 70px;
@@ -442,7 +444,6 @@ a:hover {
 	-moz-transition: background-color 0.3s ease;
 	-o-transition: background-color 0.3s ease;
 	transition: background-color 0.3s ease;
-
 }
 .indicators-line > .carousel-indicators .active:before{
 	transform: scale(0.5);
@@ -459,8 +460,6 @@ a:hover {
 	-o-transition: background-color 0.3s ease;
 	transition: background-color 0.3s ease;
 }
-
-
 
 /*---------- SLIDE CAPTION ----------*/
 .slide_style_left {
@@ -850,7 +849,7 @@ h1.company-logo {
 #login > div.login-register{
 	margin: 30px auto;
 	width: 400px;
-	height: 450px;
+	height: auto;
 	box-sizing: border-box;
 	border-radius: 5px;
 	background-color: #fff;
@@ -861,6 +860,9 @@ h1.company-logo {
 div.login-register > form {
 	padding-top: 30px;
 	text-align: center;
+}
+div.login-register > form > fieldset {
+	width: 320px;
 }
 div.login-register > form > fieldset > legend {
 	margin-bottom: 40px;
@@ -874,6 +876,7 @@ div.login-register > form > fieldset > label {
 	color: #404040;
 }
 div.login-register > form > fieldset > input {
+	position: relative;
 	padding-left: 10px;
 	display: block;
 	margin-bottom: 20px;
@@ -886,22 +889,58 @@ div.login-register > form > fieldset > input {
 div.login-register > form > fieldset > input#login-email {
 	position: relative;
 }
-div.login-register > form > fieldset > div#error-box > span.error {
+div.login-register > form > fieldset > div.error-box  {
 	position: relative;
-	top: -45px;
-	left: 135px;
-	color: #CC0000;
 }
-div.login-register > form > fieldset > div#error-box > p.error-text {
-	margin-top: -20px;
-	margin-bottom: 20px;
-	margin-left: -191px;
-	color: #CC0000;
+div.login-register > form > fieldset > div.error-box > span.error {
+    position: relative;
+    top: -46px;
+    left: 140px;
+    color: #CC0000;
+    z-index: 100;
+}
+div.login-register > form > fieldset > div.error-box > p.error-text {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color: #CC0000;
+    position: relative;
+    top: 0;
+	left: 5px;
+    z-index: 100;
+}
+div.login-register > form > fieldset > div.success-box  {
+	position: relative;
+}
+div.login-register > form > fieldset > div.success-box > span.success{
+    position: relative;
+    top: -46px;
+    left: 140px;
+    color: #89bb65;
+    z-index: 100;
+}
+div.login-register > form > fieldset > div.success-box > p.success-text {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color: #89bb65;
+    position: relative;
+    top: 0;
+	left: -90px;
+    z-index: 100;
 }
 div.login-register > form > fieldset > input:hover {
 	border: 1px solid #888888;
 }
+div.login-register > form > fieldset > input#register-btn {
+	margin-top: 50px;
+	border: none;
+	background-color: #0068b5;
+	color: #efffff;
+}
+div.login-register > form > fieldset > input#register-btn:hover {
+	background-color: #115A8E;
+}
 div.login-register > form > fieldset > input#continue-btn {
+	margin-top: 50px;
 	border: none;
 	background-color: #0068b5;
 	color: #efffff;
@@ -918,6 +957,7 @@ div.login-register > form > p:last-child {
 }
 div.login-register > form > div.social-btn {
 	margin-top: 20px;
+	margin-bottom: 20px;
 	text-align: left;
 }
 div.login-register > form > div.social-btn > a {
@@ -978,7 +1018,7 @@ div.login-register > form > div.social-btn > a:last-child {
 #register > div.login-register{
 	margin: 30px auto;
 	width: 400px;
-	height: 665px;
+	height: auto;
 	box-sizing: border-box;
 	border-radius: 5px;
 	background-color: #fff;
