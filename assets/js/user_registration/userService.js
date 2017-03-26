@@ -45,7 +45,21 @@ var userManager = (function() {
 
         isValidName : function(name) {
             return name.length > 4;
-        }
+        },
+
+        // isUserEmailExists: function (email) {
+        //     return users.some(function (u) {
+        //         return (u.email === email);
+        //     });
+        // },
+
+        loginUser: function (email, password) {
+            return users.some(function (u) {
+                return (u.email === email) &&
+                    (u.password === password);
+            });
+        },
+
 
     }
 })();
