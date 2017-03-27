@@ -117,6 +117,10 @@ a:hover {
 	display: block;
 	z-index: 10;
 }
+#top-header-nav > ul > li:nth-child(3):hover div#shopping-cart {
+	display: block;
+	z-index: 10;
+}
 	#top-header-nav > ul > li > a > span.nav-icon {
 		padding-right: 10px;
 	}
@@ -140,6 +144,25 @@ a:hover {
 		position: absolute;
 		top: 60px;
 		left: -200px;
+	}
+	#top-header-nav > ul > li > div#shopping-cart {
+		width: 300px;
+		height: auto;
+		position: absolute;
+		top: 60px;
+		left: -80px;
+	}
+	#top-header-nav > ul > li > div#shopping-cart > a {
+		color: blue;
+	}
+	#top-header-nav > ul > li > div#shopping-cart > ul > li > img {
+		display: inline-block;
+		padding-right: 10px;
+		width: 70px;
+		height: 70px;
+	}
+	#top-header-nav > ul > li > div#shopping-cart > ul > li > span {
+		padding-right: 15px;
 	}
 	#top-header-nav > ul > li > div > div {
 		margin: 30px;

@@ -43,9 +43,17 @@
                                 <a class="top-header-btn" href="login.html">влез в акаунт</a>
                             </div>
                         </div>
-
                     </li>
-                    <li><a href="#"><span class="glyphicon glyphicon-shopping-cart nav-icon"></span>Моята количка<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                    <li>
+                        <a href="#"><span class="glyphicon glyphicon-shopping-cart nav-icon"></span>Моята количка<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                        <div id="shopping-cart">
+                                <ul id="shop">
+                                    <li></li>
+                                </ul>
+                                <div id="total-cart"></div>
+                                <div id="total-product"></div>
+                            </div>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -210,7 +218,7 @@
                     <p class="stock"><span>В наличност</span></p>
                     <p>Включена гаранция</p>
                     <p>Физическо лице: 24 месеца</p>
-                    <a href="#" class="see-more-btn add-btn"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>Добави в количка</a>
+                    <a href="#" data-name="Смартфон Wink City S, Dual SIM, 8GB, 3G, Black" data-price="132.00" data-img="assets/img/1.jpg" class="see-more-btn add-btn"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>Добави в количка</a>
                 </div>
 
             </div>
@@ -383,6 +391,7 @@
         </ul>
     </article>
 </footer>
+<script src="./assets/js/shopping-cart.js"></script>
 <a href="#" class="scrollToTop"><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i>Начало</a>
 </body>
 <script>
